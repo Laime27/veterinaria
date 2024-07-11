@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Veterinaria Mundo Animal</title>
+</head>
+
+<style>
+    #imagen-cabecera {
+        mask-image: linear-gradient(black 80%, transparent);
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<body>
+    <header class="bg-gradient-to-b from-[#d7e6ec] to-white">
+        <nav class="pt-4 py-2 fixed w-full bg-[#d7e6ec] z-10 top-0 ">
+            <div class="max-w-screen-xl mx-auto flex justify-between items-center px-8 2xl:px-0 ">
+                <div>
+                    <img src="imagen/logo.webp" alt="Logo" class="h-14">
+                </div>
+
+                <button id="menu_button" type="button" class="block md:hidden z-20 focus:outline-none">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+
+                <div class="hidden  absolute top-20 md:flex md:relative md:top-0 w-full left-0 md:w-auto" id="menu">
+                    <div class="flex flex-col md:flex-row text-center bg-[#0ea6e9] md:bg-transparent">
+                        <a href="#"
+                            class="menu-link font-bold md:mx-4 py-4 md:py-0 hover:bg-[#028ac7] text-white md:text-black md:hover:bg-transparent">Inicio</a>
+                        <a href="#sobreNosotros"
+                            class="menu-link font-bold md:mx-4 py-4 md:py-0 hover:bg-[#028ac7] text-white md:text-black md:hover:bg-transparent">Sobre
+                            Nosotros</a>
+                        <a href="#nuestrosServicios"
+                            class="menu-link font-bold md:mx-4 py-4 md:py-0 hover:bg-[#028ac7] text-white md:text-black md:hover:bg-transparent">Servicios</a>
+                        <a href="#contacto"
+                            class="menu-link font-bold md:mx-4 py-4 md:py-0 hover:bg-[#028ac7] text-white md:text-black md:hover:bg-transparent">Contacto</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <div
+            class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-center items-center h-[86vh] px-8 2xl:px-0 pt-32 md:pt-0">
+            <div class="text-center md:text-left   md:w-1/2">
+                <h1 class="text-6xl font-bold ">Veterinaria <span class="text-[#38bdf8]"> Mundo Animal</span> </h1>
+                <p class="text-lg my-8 text-gray-700 font-semibold">En Veterinaria Mundo Animal, nos dedicamos a
+                    proporcionar el mejor cuidado para tus mascotas. Con años de experiencia y un equipo apasionado,
+                    aseguramos la salud y el bienestar de tus compañeros de vida.</p>
+                <a href="#contacto"
+                    class="bg-blue-500 px-6 py-3 rounded-full text-white font-semibold hover:bg-blue-600 transition duration-300 shadow-lg">
+                    Contáctanos
+                </a>
+            </div>
+            <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                <img src="imagen/veterinaria2.png" alt="Veterinaria" class=" md:flex md:w-full md:h-auto"
+                    id="imagen-cabecera">
+            </div>
+        </div>
+
+    </header>
+
+    <section id="sobreNosotros" class="py-24">
+        <div class="max-w-screen-xl mx-auto my-8 px-8 md:px:0  ">
+            <div class="text-center mb-4 md:w-10/12 mx-auto ">
+                <h2 class=" font-bold text-4xl">Sobre Nosotros</h2>
+                <p class="text-gray-700 my-4">En Veterinaria Mundo Animal, nos dedicamos a ofrecer atención de calidad a
+                    tus
+                    mascotas con amor y
+                    profesionalismo. Nuestro objetivo es asegurar que cada animal reciba el cuidado y la atención que
+                    merece.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center  ">
+
+                <div class="flex  items-center justify-center w-96 my-8 mx-auto md:mx-4">
+
+                    <span
+                        class="flex-shrink-0 inline-flex items-center justify-center h-16 w-16 rounded-full mr-4 mt-6 md:mt-4 bg-blue-500 text-white">
+                        <i class="fas fa-compass text-3xl"></i>
+                    </span>
+                    <div>
+                        <strong>Misión: </strong>
+                        <br>
+                        <span class="text-gray-700 text-left">Brindar atención veterinaria de alta calidad con un
+                            enfoque en el bienestar
+                            y la salud de cada mascota.
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="flex  items-center justify-center w-96 mx-auto md:mx-4 ">
+                    <span
+                        class="flex-shrink-0 inline-flex items-center justify-center h-16 w-16 rounded-full mr-4 mt-6 md:mt-4 bg-blue-500 text-white">
+                        <i class="fas fa-eye text-3xl"></i>
+                    </span>
+                    <div>
+                        <strong>Visión: </strong>
+                        <br>
+                        <span class="text-gray-700 text-left">
+                            Ser la clínica veterinaria reconocida por nuestro compromiso con la excelencia y la
+                            compasión hacia los animales.
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-[#d7e6ec] py-24" id="nuestrosServicios">
+        <div class="max-w-screen-xl mx-auto px-8 2xl:px-0">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center">Nuestros Servicios</h2>
+
+            <div class="flex flex-col lg:flex-row gap-6 mt-10 justify-between items-center">
+                <div class="flex flex-col justify-center items-center text-center">
+                    <span
+                        class="flex-shrink-0 inline-flex items-center justify-center h-16 w-16 rounded-full border-4 border-blue-500 text-gray-800">
+                        <i class="fas fa-stethoscope text-3xl"></i>
+                    </span>
+                    <h3 class="text-xl font-bold my-2">Consulta General</h3>
+                    <p class="text-gray-900 text-lg">Atendemos todo tipo de </p>
+                    <p class="text-gray-900 text-lg">consultas médicas para tu mascota.</p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center text-center">
+                    <span
+                        class="flex-shrink-0 inline-flex items-center justify-center h-16 w-16 rounded-full border-4 border-blue-500 text-gray-800">
+                        <i class="fas fa-syringe text-3xl"></i>
+                    </span>
+                    <h3 class="text-xl font-bold my-2">Vacunación</h3>
+                    <p class="text-gray-900 text-lg">Proveemos vacunas esenciales </p>
+                    <p class="text-gray-900 text-lg"> para mantener la salud de tu mascota.</p>
+
+                </div>
+
+                <div class="flex flex-col justify-center items-center text-center">
+                    <span
+                        class="flex-shrink-0 inline-flex items-center justify-center h-16 w-16 rounded-full border-4 border-blue-500 text-gray-800">
+                        <i class="fas fa-cut text-3xl"></i>
+                    </span>
+                    <h3 class="text-xl font-bold my-2">Peluquería</h3>
+                    <p class="text-gray-900 text-lg">Ofrecemos servicios de peluquería</p>
+                    <p class="text-gray-900 text-lg"> y estética para tu mascota.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="max-w-screen-xl mx-auto my-8 px-8 md:px:0  ">
+            <h3 class="text-3xl font-bold text-center my-8">Testimonios</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/7752806/pexels-photo-7752806.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Samantha" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-semibold text-lg">Samantha</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"El personal de Veterinaria Mundo Animal es increíble. Siempre están
+                        atentos a las necesidades de mi perro y le brindan el mejor cuidado posible."</p>
+                </div>
+
+
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/6303378/pexels-photo-6303378.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Michael" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-semibold text-lg">Michael</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Mi perro siempre está feliz después de visitar la clínica. El trato es
+                        excepcional y la atención a los detalles es inmejorable."</p>
+                </div>
+
+
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/17167840/pexels-photo-17167840/free-photo-of-saltando-perro-jugando-cesped.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Olivia" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-semibold text-lg">Olivia</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"No puedo recomendar suficiente a Veterinaria Mundo Animal. Su
+                        profesionalismo y amor por los animales es evidente en cada visita."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contacto" class="bg-[#d7e6ec] py-8">
+        <div class="max-w-screen-xl mx-auto px-8 2xl:px-0">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">Contáctanos</h2>
+
+            <div class="flex flex-col lg:flex-row gap-12">
+
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-green-500"></div>
+                        <div class="mb-6">
+                            <label for="nombre" class="block text-gray-700 font-bold mb-2">Nombre del dueño</label>
+                            <input type="text" id="nombre" name="nombre"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="mascota" class="block text-gray-700 font-bold mb-2">Nombre de la mascota</label>
+                            <input type="text" id="mascota" name="mascota"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="tipo_mascota" class="block text-gray-700 font-bold mb-2">Tipo de mascota</label>
+                            <select id="tipo_mascota" name="tipo_mascota"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="perro">Perro</option>
+                                <option value="gato">Gato</option>
+                                <option value="ave">Ave</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="mensaje" class="block text-gray-700 font-bold mb-2">Mensaje o síntomas</label>
+                            <textarea id="mensaje" name="mensaje" rows="4"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required></textarea>
+                        </div>
+                        <button type="button"
+                            class="bg-blue-500 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-600 transition duration-300 shadow-md">
+                            <i class="fas fa-paw mr-2"></i>Enviar Consulta
+                        </button>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-green-500"></div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Veterinaria Mundo Animal</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-blue-500 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Dirección</p>
+                                    <p class="text-gray-600">123 Calle de las Mascotas, Ciudad Animal, País</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone text-blue-500 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Teléfono</p>
+                                    <p class="text-gray-600">+1 234 567 890</p>
+                                    <p class="text-gray-600">Emergencias: +1 987 654 321</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-blue-500 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Email</p>
+                                    <p class="text-gray-600">info@mundoanimal.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-blue-500 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Horario de Atención</p>
+                                    <p class="text-gray-600">Lunes - Viernes: 9:00 AM - 7:00 PM</p>
+                                    <p class="text-gray-600">Sábados: 10:00 AM - 3:00 PM</p>
+                                    <p class="text-gray-600">Domingos: Cerrado (Solo emergencias)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">Síguenos</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-blue-500 hover:text-blue-600"><i
+                                        class="fab fa-facebook-f text-2xl"></i></a>
+                                <a href="#" class="text-blue-500 hover:text-blue-600"><i
+                                        class="fab fa-instagram text-2xl"></i></a>
+                                <a href="#" class="text-blue-500 hover:text-blue-600"><i
+                                        class="fab fa-twitter text-2xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-green-600 rounded-full w-14 h-14 flex items-center justify-center fixed bottom-10 right-5">
+        <button class="w-full" id="wsp_veterinaria">
+            <i class="fa-brands fa-whatsapp text-white text-4xl "></i>
+        </button>
+    </div>
+
+
+    <footer class="bg-gray-100 py-4">
+        <div class="max-w-6xl mx-auto px-4  ">
+            <div class="border-t border-gray-200   text-center">
+
+                <p class="text-gray-500 ">
+                    &copy; 2024 Creado por Pou Programador |
+                    <a href="https://github.com/Laime27" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-500 hover:text-blue-600">
+                        <i class="fab fa-github"></i>
+                    </a> |
+                    <a href="https://www.linkedin.com/in/cesar-laime-247150260/" target="_blank"
+                        rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="index.js"> </script>
+
+</body>
+
+</html>
